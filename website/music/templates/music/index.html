@@ -1,0 +1,6 @@
+<h3>Here are my all albums</h3>
+<ul>
+	{% for album in albums %}
+	<li><a href="/music/{{ album.id }}/">{{ album.album_title }}</a></li>
+	{%endfor%}
+</ul>
